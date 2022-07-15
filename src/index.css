@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+:root {
+  --raisin: #312B3B;
+  --raisin-d: #1f1c25;
+  --raisin-t: #14111877;
+  --purple: #9D7EB4;
+  --cyan: #78E0DC;
+  --cyan-t: #78e0dcc0;
+  --turq: #1d6277;
+  --light-cyan: #80ecee7c;
+  --very-light-cyan: #def8f8;
+  font-size: 12px;
+  font-size: calc(12px + 2vmin); /* mobile: ~20px */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--raisin);
+  background: linear-gradient(133deg, var(--raisin) 0%, var(--purple) 60%, var(--cyan) 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
