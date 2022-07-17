@@ -7,9 +7,6 @@ function App() {
     <div className="App">
       <Header/>
       <Navbar/>
-      <section>
-        <article></article>
-      </section>
       <footer></footer>
     </div>
   );

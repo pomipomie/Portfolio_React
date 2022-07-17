@@ -123,6 +123,15 @@ h2 {
   margin: 1em auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+#cpico {
+  width: 1em;
+  height: auto;
+}
+
 @media screen and (min-width: 700px) {
   .banner {
     height: calc(4rem + 12vh);
