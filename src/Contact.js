@@ -24,16 +24,16 @@ export default function Contact() {
     const codePenIcon = "https://i.ibb.co/ZzLpcW5/cpenico2.png";
 
     return (
-           <ContainerBox title="Contact">
-                <ContentBox href={"mailto:"+data.email} name="Email" />
-                <ContentBox href={data.phone} name="WhatsApp" />
-                <ContentBox href={data.gitHub} name="GitHub" />
-                <ContentBox href={data.codePen} name="CodePen" icon={<img src={codePenIcon} alt="codepen" id="cpico"/>}/>
-                <ContentBox href={data.discord} name="Discord" />
-                <ContentBox href={data.linkedIn} name="LinkedIn" />
-                <ContentBox href={data.facebook} name="Facebook" />
-                <ContentBox href={data.twitter} name="Twitter" />
-                <ContentBox href={data.instagram} name="Instagram" />
+           <ContainerBox title="Contact" className="container" classDiv="contact_container">
+                <ContentBox className={'content'} href={"mailto:"+data.email} name="Email" icon={<i className="bi bi-envelope-fill"></i>} />
+                <ContentBox className={'content'} href={data.phone} name="WhatsApp" icon={<i className="bi bi-whatsapp"></i>}/>
+                <ContentBox className={'content'} href={data.gitHub} name="GitHub" icon={<i className="bi bi-github"></i>}/>
+                <ContentBox className={'content'} href={data.codePen} name="CodePen" icon={<img src={codePenIcon} alt="codepen" id="cpico"/>}/>
+                <ContentBox className={'content'} href={data.discord} name="Discord" icon={<i className="bi bi-discord"></i>}/>
+                <ContentBox className={'content'} href={data.linkedIn} name="LinkedIn" icon={<i className="bi bi-linkedin"></i>}/>
+                <ContentBox className={'content'} href={data.facebook} name="Facebook" icon={<i className="bi bi-facebook"></i>}/>
+                <ContentBox className={'content'} href={data.twitter} name="Twitter" icon={<i className="bi bi-twitter"></i>}/>
+                <ContentBox className={'content'} href={data.instagram} name="Instagram" icon={<i className="bi bi-instagram"></i>}/>
             </ContainerBox>
     )
 }
