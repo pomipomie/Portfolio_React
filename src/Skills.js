@@ -68,8 +68,9 @@ export default function Skills() {
                                 lastChild={lastChild}
                                 handleClick={() => {
                                     print = document.getElementById(`${'s'+dat.skillId}`);
+                                    console.log(print);
                                     console.log(print.lastChild);
-                                    changeClass(print);
+                                    print.lastChild === 'HTML'?? changeClass();
                                 }} />
                         )
                     }
