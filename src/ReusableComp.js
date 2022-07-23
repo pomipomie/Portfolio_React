@@ -1,3 +1,4 @@
+import { useState } from "react";
 
 export function ContainerBox(props) {
     return (
@@ -19,13 +20,22 @@ export function ContentBox(props) {
 }
 
 export function ContentBoxB(props) {
+    const [isActive, setActive] = useState(false);
+
+    const handleClick = () => {
+        setActive(!isActive);
+    }
 
     return (
         <section className={props.className}>
             <h3>{props.name}</h3> 
             <p>{props.level}</p>
-            <p className={props.lastChild} id={props.id}>{props.desc}</p>
-            <i className="bi bi-caret-down-fill" onClick={props.handleClick}></i>
+            {isActive ? <ToggleContent desc={props.desc}/> : null}
+            <i className={isActive ? "bi bi-caret-up-fill" : "bi bi-caret-down-fill"} onClick={handleClick}></i>
         </section>
     )
+}
+
+export function ToggleContent(props) {
+    return <div>{props.desc}</div>
 }

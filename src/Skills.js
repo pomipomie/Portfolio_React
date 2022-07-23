@@ -1,17 +1,17 @@
 import { ContainerBox, ContentBoxB } from "./ReusableComp";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { HTMLinfo } from "./SkillsInfo/HTMLInfo";
 
 export default function Skills() {
 
     const [data, setData] = useState([]);
-    const [lastChild, setLastChild] = useState('not-toggle');
 
     const getData = async () => {
         try {
             const url = 'pdata/skill/list';
             const response = await axios.get(url);
-            console.log(response.data);
+            // console.log(response.data);
             setData(response.data);
         }
         catch(error) {
@@ -23,35 +23,15 @@ export default function Skills() {
         getData()
     }, [])
 
-    let print = '';
-
-    // const toggleInfo = useCallback( () => {
-    //     console.log(print);
-    //     //print.lastChild === 'not-toggle' ? setLastChild('toggle') : setLastChild('not-toggle')}
-    // }, [],)
-
     let desc = "";
 
-    // const toggleIcon = document.getElementsByClassName('bi-caret-down-li');
-    // const showInfo = document.getElementById({this.id});
-    // const handleClick = () => {
-    //     console.log('clicked');
-    //     console.log('this is:', this);
-    //     // toggleIcon.className = 'bi-caret-down-li';
-    //     // showInfo.style.display = 'block';
-    // }
-
-    const changeClass = () => {
-        lastChild === 'not-toggle' ? setLastChild('toggle') : setLastChild('not-toggle')
-    };
-
     return (
-            <ContainerBox title="Skills" className="container">
+            <ContainerBox title="Skills" className="container" classDiv="containerbox_div">
                 {!data ? 'Loading...' : data.map(
                     (dat, index) => {
                         switch (dat.skillName) {
                             case 'HTML':
-                                desc = 'html info';
+                                desc = <HTMLinfo/>;
                                 break;
                             default:
                                 desc = "";
@@ -64,14 +44,8 @@ export default function Skills() {
                                 className={'content'}
                                 name={dat.skillName} 
                                 level={dat.skillLevel} 
-                                desc={desc} 
-                                lastChild={lastChild}
-                                handleClick={() => {
-                                    print = document.getElementById(`${'s'+dat.skillId}`);
-                                    console.log(print);
-                                    console.log(print.lastChild);
-                                    print.lastChild === 'HTML'?? changeClass();
-                                }} />
+                                desc={desc}
+                             />
                         )
                     }
                 )}
