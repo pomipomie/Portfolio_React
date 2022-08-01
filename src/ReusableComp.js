@@ -39,3 +39,7 @@ export function ContentBoxB(props) {
 export function ToggleContent(props) {
     return <div>{props.desc}</div>
 }
+
+export function TagButton(props) {
+    return <div className="tag_btn" key={"tag"+props.skill}>{props.skill}</div>
+}

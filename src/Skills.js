@@ -7,8 +7,16 @@ import { Bootstrapinfo } from "./SkillsInfo/BootstrapInfo";
 import { Sassinfo } from "./SkillsInfo/SassInfo";
 import { Javascriptinfo } from "./SkillsInfo/JavascriptInfo";
 import { Reactinfo } from "./SkillsInfo/ReactInfo";
+import { ReactNativeinfo } from "./SkillsInfo/ReactNativeInfo";
 import { Angularinfo } from "./SkillsInfo/AngularInfo";
 import { Typescriptinfo } from "./SkillsInfo/TypescriptInfo";
+import { Packageinfo } from "./SkillsInfo/PMInfo";
+import { Nodeinfo } from "./SkillsInfo/NodeInfo";
+import { Nextinfo } from "./SkillsInfo/NextInfo";
+import { Rubyinfo } from "./SkillsInfo/RubyInfo";
+import { Railsinfo } from "./SkillsInfo/RailsInfo";
+import { Javainfo } from "./SkillsInfo/JavaInfo";
+import { SpringBootinfo } from "./SkillsInfo/SpringBootInfo";
 
 export default function Skills() {
 
@@ -60,6 +68,30 @@ export default function Skills() {
                                 break;
                             case 'TypeScript':
                                 desc = <Typescriptinfo/>
+                                break;
+                            case 'Package managers':
+                                desc = <Packageinfo/>
+                                break;
+                            case 'React Native':
+                                desc = <ReactNativeinfo/>
+                                break;
+                            case 'Node.js':
+                                desc = <Nodeinfo/>
+                                break;
+                            case 'Next.js':
+                                desc = <Nextinfo/>
+                                break;
+                            case 'Ruby':
+                                desc = <Rubyinfo/>
+                                break;
+                            case 'Rails':
+                                desc = <Railsinfo/>
+                                break;
+                            case 'Java':
+                                desc = <Javainfo/>
+                                break;
+                            case 'Spring Boot':
+                                desc = <SpringBootinfo/>
                                 break;
                             default:
                                 desc = "";

@@ -1,14 +1,50 @@
+import axios from "axios";
+import { useState, useEffect } from "react";
+import { ContainerBox, TagButton } from "./ReusableComp";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
+    const [data, setData] = useState([]);
+
+    const getData = async () => {
+        try {
+            const url = 'pdata/projects/list';
+            const response = await axios.get(url);
+            //console.log(response.data);
+            const sorted = response.data.reverse();
+            //console.log(sorted);
+            setData(sorted);
+        }
+        catch(error) {
+            console.error('error: '+error);
+        }
+    };
+
+    useEffect(() => {
+        getData()
+    }, [])
+
     return (
-            <article className="container">
-                <h2>Projects</h2>
-                <section>
-                    <p className="content">Cat ipsum dolor sit amet, donskoy. American shorthair leopard, donskoy yet grimalkin donskoy. Ragdoll manx. Leopard ocicat siberian tiger jaguar or egyptian mau. Manx tabby. Maine coon scottish fold or tomcat and ocicat burmese. American shorthair british shorthair tiger but munchkin for turkish angora. Tom. Ragdoll.</p>
-                </section>
-                <section>
-                    <p className="content">Cat ipsum dolor sit amet, donskoy. Ragdoll.</p>
-                </section>
-            </article>
+        <ContainerBox title="Projects" className="container" classDiv="containerbox_div">
+            {!data ? 'Loading...' : data.map( 
+                    (dat, index) => {
+                        return (
+                            <section className="content" key={'p'+dat.projId}>
+                                <Link to={`/projects/${dat.projId}`}>
+                                    <h3 className="no_shadow">{dat.pname}</h3>
+                                    <img className="project_img_s" src={dat.ppreview} alt={`${dat.pname} preview`}/>
+                                </Link>
+                                {dat.skills.map(
+                                    (skill) => {
+                                        return (
+                                            <TagButton skill={skill.skillName}/>
+                                        )
+                                    }
+                                )}
+                            </section>
+                        )
+                    }
+                )}
+        </ContainerBox>
     )
 }

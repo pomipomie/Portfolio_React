@@ -8,6 +8,7 @@ import About from './About';
 import Contact from "./Contact";
 import Education from './Education';
 import Experience from './Experience';
+import ProjectDetails from "./ProjectDetails";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
@@ -42,6 +43,7 @@ export default function Navbar() {
                 <Route exact path="experience" element={<Experience/>} />
                 <Route exact path="skills" element={<Skills/>} />
                 <Route exact path="projects" element={<Projects/>} />
+                <Route path="projects/*" element={<ProjectDetails />} />
                 <Route exact path="contact" element={<Contact/>} />
             </Routes>
             </div>
