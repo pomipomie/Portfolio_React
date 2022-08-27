@@ -17,6 +17,7 @@ import { Rubyinfo } from "./SkillsInfo/RubyInfo";
 import { Railsinfo } from "./SkillsInfo/RailsInfo";
 import { Javainfo } from "./SkillsInfo/JavaInfo";
 import { SpringBootinfo } from "./SkillsInfo/SpringBootInfo";
+import { Pythoninfo } from "./SkillsInfo/PythonInfo";
 
 export default function Skills() {
 
@@ -93,8 +94,11 @@ export default function Skills() {
                             case 'Spring Boot':
                                 desc = <SpringBootinfo/>
                                 break;
+                            case 'Python':
+                                desc = <Pythoninfo/>
+                                break;
                             default:
-                                desc = "";
+                                desc = "Under construction";
                                 break;
                         }
                         return (

@@ -20,6 +20,7 @@ export function Javascriptinfo() {
                     <ListItem icon={"bi bi-star-fill"} info={"Object Oriented Programming"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Functional programming"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Async & Await"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Callbacks and Promises"}/> 
                     <ListItem icon={"bi bi-star-fill"} info={"Fetch API"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Math methods"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Regular expressions"}/>
@@ -27,12 +28,11 @@ export function Javascriptinfo() {
                     <ListItem icon={"bi bi-star-fill"} info={"JSON"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"BOM"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"History API"}/>
-                    <ListItem icon={"bi bi-star-half"} info={"Canvas API"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Canvas API"}/>
                 </ul>
                 <p className="list_p">Currently learning or planning to learn:</p>
                 <ul className="list_ul">
                     <ListItem icon={"bi bi-star-half"} info={"Different kinds of binding"}/>
-                    <ListItem icon={"bi bi-star-half"} info={"Callbacks and Promises"}/>
                     <ListItem icon={"bi bi-star-half"} info={"Error handling"}/>
                     <ListItem icon={"bi bi-star-half"} info={"Forms API"}/>
                     <ListItem icon={"bi bi-star-half"} info={"Web Storage API"}/>
