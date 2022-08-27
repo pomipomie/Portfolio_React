@@ -21,6 +21,7 @@ export function Angularinfo() {
                     <ListItem icon={"bi bi-star-fill"} info={"Observables"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Consuming APIs"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Modules"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Sending data between components via service"}/>
                 </ul>
                 <p className="list_p">Currently learning or planning to learn:</p>
                 <ul className="list_ul">
