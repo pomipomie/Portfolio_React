@@ -11,7 +11,7 @@ export default function ProjectDetails() {
 
     const getData = async () => {
         try {
-            const url = `/pdata/projects/${myNumber}/search`;
+            const url = `http://pzxrslcdua.us09.qoddiapp.com/pdata/projects/${myNumber}/search`;
             const response = await axios.get(url);
             //console.log(response.data);
             setData(response.data);
@@ -28,14 +28,15 @@ export default function ProjectDetails() {
     return (
         <section className="content">
             <h3>{data.pname}</h3>
-            <a href={data.purl} target="_blank" rel="noreferrer">
-                <img className="project_img_l" src={data.ppreview} alt={`${data.pname} preview`}/>
-            </a>
+            {!data.skills ? "" :
+                <a href={data.purl} target="_blank" rel="noreferrer">
+                    <img className="project_img_l" src={data.ppreview} alt={`${data.pname} preview`}/>
+                </a>
+            }
             <p className="pdesc_p">{data.pdescription}</p>
-            {/* <p className="pdesc_p"></p> */}
             <div>
-                <p className="tag_bnd">Technologies: </p>
-                {!data ? 'Loading...' : data.skills?.map(
+                {!data.skills ? "" : <p className="tag_bnd">Technologies: </p>}
+                {!data.skills ? <p className="loading">Loading...</p> : data.skills?.map(
                                         (skill) => {
                                             return (
                                                 <TagButton skill={skill.skillName}/>
@@ -43,10 +44,12 @@ export default function ProjectDetails() {
                                         }
                                     )}
             </div>
-            <div style={{margin: "1em"}}>
-                <p className="tag_bnd">URL: </p>
-                <a href={data.purl} target="_blank" rel="noreferrer"><p className="tag_bnd">{data.purl}</p></a>
-            </div>
+            {data.purl ? 
+                <div style={{margin: "1em"}}>
+                    <p className="tag_bnd">URL: </p>
+                    <a href={data.purl} target="_blank" rel="noreferrer" alt="Preview"><p className="tag_bnd">{data.purl}</p></a>
+                </div>
+                : "" }
             {data.prepo ? 
                 <div style={{margin: "1em"}}>
                     <p className="tag_bnd">Repository: </p>

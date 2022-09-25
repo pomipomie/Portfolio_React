@@ -182,7 +182,7 @@ section h3+p {
 }
 
 .text {
-  letter-spacing: .05em;
+  letter-spacing: .025em;
   line-height: 1.25;
 }
 
@@ -266,6 +266,12 @@ section h3+p {
   max-width: 80%;
   margin: .5em auto;
   text-shadow: 3px 3px var(--turq), 2px 2px var(--raisin-d);
+}
+
+.loading {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 700px) {

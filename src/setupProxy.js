@@ -9,3 +9,15 @@ module.exports = function(app) {
     })
   );
 };
+
+/*  to paste in package.json:
+
+  "proxy": "http://localhost:8080",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+
+*/
