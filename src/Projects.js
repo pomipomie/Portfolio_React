@@ -8,7 +8,7 @@ export default function Projects() {
 
     const getData = async () => {
         try {
-            const url = 'http://pzxrslcdua.us09.qoddiapp.com/pdata/projects/list';
+            const url = 'https://pzxrslcdua.us09.qoddiapp.com/pdata/projects/list';
             const response = await axios.get(url);
             //console.log(response.data);
             const sorted = response.data.reverse();

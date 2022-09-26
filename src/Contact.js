@@ -7,7 +7,7 @@ export default function Contact() {
 
     const getData = async () => {
         try {
-            const url = 'http://pzxrslcdua.us09.qoddiapp.com/pdata/user/1/search';
+            const url = 'https://pzxrslcdua.us09.qoddiapp.com/pdata/user/1/search';
             const response = await axios.get(url);
             setData(response.data);
         }

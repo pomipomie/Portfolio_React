@@ -11,7 +11,7 @@ export default function ProjectDetails() {
 
     const getData = async () => {
         try {
-            const url = `http://pzxrslcdua.us09.qoddiapp.com/pdata/projects/${myNumber}/search`;
+            const url = `https://pzxrslcdua.us09.qoddiapp.com/pdata/projects/${myNumber}/search`;
             const response = await axios.get(url);
             //console.log(response.data);
             setData(response.data);
