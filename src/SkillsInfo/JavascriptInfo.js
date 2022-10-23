@@ -6,7 +6,7 @@ export function Javascriptinfo() {
                 <ul className="list_ul">
                     <ListItem icon={"bi bi-star-fill"} info={"Syntax and basics (variables, operators, data types, functions)"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"ES6 (arrow functions, rest parameters, destructuring, etc.)"}/>
-                    <ListItem icon={"bi bi-star-fill"} info={"ECMAScript 2016/2017/2018"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"ECMAScript 2016-2021"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Scopes"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Loops and iterators (for, for in, for of, while, do... while)"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Conditionals (if/else, ternary operator, switch)"}/>
@@ -21,7 +21,7 @@ export function Javascriptinfo() {
                     <ListItem icon={"bi bi-star-fill"} info={"Functional programming"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Async & Await"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Callbacks and Promises"}/> 
-                    <ListItem icon={"bi bi-star-fill"} info={"Fetch API"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"AJAX, Fetch API, Axios"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Math methods"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Regular expressions"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Modules"}/>
@@ -29,15 +29,21 @@ export function Javascriptinfo() {
                     <ListItem icon={"bi bi-star-fill"} info={"BOM"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"History API"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Canvas API"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Different kinds of binding"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Error handling"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Forms API"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Web Storage API"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Call Stack & Event Loop"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Generators & Iterators"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Closures"}/>
+                    
                 </ul>
                 <p className="list_p">Currently learning or planning to learn:</p>
                 <ul className="list_ul">
-                    <ListItem icon={"bi bi-star-half"} info={"Different kinds of binding"}/>
-                    <ListItem icon={"bi bi-star-half"} info={"Error handling"}/>
-                    <ListItem icon={"bi bi-star-half"} info={"Forms API"}/>
-                    <ListItem icon={"bi bi-star-half"} info={"Web Storage API"}/>
+
                     <ListItem icon={"bi bi-star-half"} info={"Web Worker API"}/>
-                    <ListItem icon={"bi bi-star-half"} info={"AJAX"}/>
+                    <ListItem icon={"bi bi-star-half"} info={"JS Engines"}/>
+
                 </ul>
             </div>
     )

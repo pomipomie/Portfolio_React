@@ -16,13 +16,14 @@ export function HTMLinfo() {
                     <ListItem icon={"bi bi-star-fill"} info={"Media tags"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"SVG"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Canvas API"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Document Object Model (DOM)"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Geolocation API"}/>
                     <ListItem icon={"bi bi-star-fill"} info={"Drag&Drop API"}/>
-                    <ListItem icon={"bi bi-star-fill"} info={"Document Object Model (DOM)"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"Web Storage API"}/>
+                    <ListItem icon={"bi bi-star-fill"} info={"BOM (Window, Navigation, Location)"}/>
                 </ul>
                 <p className="list_p">Currently learning or planning to learn:</p>
                 <ul className="list_ul">
-                    <ListItem icon={"bi bi-star-half"} info={"Web Storage API"}/>
                     <ListItem icon={"bi bi-star-half"} info={"Web Workers API"}/>
                 </ul>
             </div>
