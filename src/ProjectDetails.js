@@ -55,7 +55,7 @@ export default function ProjectDetails() {
                     <p className="tag_bnd">Repository: </p>
                     <a href={data.prepo} target="_blank" rel="noreferrer"><p className="tag_bnd">{data.prepo}</p></a>
                 </div>
-             : "" }
+                : "" }
         </section>
     )
 }
