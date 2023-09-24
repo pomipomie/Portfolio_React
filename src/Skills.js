@@ -25,7 +25,7 @@ export default function Skills() {
 
     const getData = async () => {
         try {
-            const url = 'https://pzxrslcdua.us09.qoddiapp.com/pdata/skill/list';
+            const url = 'https://bgptsfzryd.us16.qoddiapp.com/pdata/skill/list';
             const response = await axios.get(url);
             setData(response.data);
         }
