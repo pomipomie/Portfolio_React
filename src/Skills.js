@@ -25,7 +25,7 @@ export default function Skills() {
 
     const getData = async () => {
         try {
-            const url = 'https://pzxrslcdua.us09.qoddiapp.com/pdata/skill/list';
+            const url = 'https://bgptsfzryd.us16.qoddiapp.com/pdata/skill/list';
             const response = await axios.get(url);
             setData(response.data);
         }
@@ -43,7 +43,7 @@ export default function Skills() {
     return (
             <ContainerBox title="Skills" className="container" classDiv="containerbox_div">
                 {!data ? 'Loading...' : data.map(
-                    (dat, index) => {
+                    (dat) => {
                         switch (dat.skillName) {
                             case 'HTML':
                                 desc = <HTMLinfo/>;
@@ -108,7 +108,7 @@ export default function Skills() {
                                 name={dat.skillName} 
                                 level={dat.skillLevel} 
                                 desc={desc}
-                             />
+                            />
                         )
                     }
                 )}

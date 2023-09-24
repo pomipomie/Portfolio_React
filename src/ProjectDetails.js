@@ -11,7 +11,7 @@ export default function ProjectDetails() {
 
     const getData = async () => {
         try {
-            const url = `https://pzxrslcdua.us09.qoddiapp.com/pdata/projects/${myNumber}/search`;
+            const url = `https://bgptsfzryd.us16.qoddiapp.com/pdata/projects/${myNumber}/search`;
             const response = await axios.get(url);
             //console.log(response.data);
             setData(response.data);
@@ -55,7 +55,7 @@ export default function ProjectDetails() {
                     <p className="tag_bnd">Repository: </p>
                     <a href={data.prepo} target="_blank" rel="noreferrer"><p className="tag_bnd">{data.prepo}</p></a>
                 </div>
-             : "" }
+                : "" }
         </section>
     )
 }
