@@ -12,7 +12,7 @@ export default function Projects() {
 
     const getData = async () => {
         try {
-            const url = 'https://pzxrslcdua.us09.qoddiapp.com/pdata/projects/list';
+            const url = 'https://bgptsfzryd.us16.qoddiapp.com/pdata/projects/list';
             const response = await axios.get(url);
             const sorted = response.data.reverse();
             setData(sorted);
@@ -24,7 +24,7 @@ export default function Projects() {
 
     const getAllSkills = async () => {
         try {
-            const url = 'https://pzxrslcdua.us09.qoddiapp.com/pdata/skill/list';
+            const url = 'https://bgptsfzryd.us16.qoddiapp.com/pdata/skill/list';
             const response = await axios.get(url);
             setAllSkills(response.data);
         }
@@ -35,7 +35,7 @@ export default function Projects() {
 
     // const postData = async () => {
     //     try {
-    //         const url = 'https://pzxrslcdua.us09.qoddiapp.com/pdata/projects/new';
+    //         const url = 'https://bgptsfzryd.us16.qoddiapp.com/pdata/projects/new';
     //         const response = await axios.post(url, {});
     //     } 
     //     catch (error) {
