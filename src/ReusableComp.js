@@ -1,18 +1,9 @@
-import { useState, useContext } from "react";
-import { userContext } from './Context';
+import { useState } from "react";
 
 export function ContainerBox(props) {
-    const isLoggedIn = useContext(userContext);
-
     return (
         <article className={props.className}>
-            <div className="h2_container">
-                <h2>{props.title}</h2>
-                { isLoggedIn && 
-                    <div className="add_btn" role="button" onClick={props.openModal}>
-                        <i class="bi bi-plus-square"></i><p>add new</p>
-                    </div>}
-            </div>
+            <h2>{props.title}</h2>
             <div className={props.classDiv}>
                 {props.children}
             </div>
