@@ -7,7 +7,7 @@ export default function Contact() {
 
     const getData = async () => {
         try {
-            const url = 'https://bgptsfzryd.us16.qoddiapp.com/pdata/user/1/search';
+            const url = 'https://portfolio-back-latest.onrender.com/pdata/user/1/search';
             const response = await axios.get(url);
             setData(response.data);
         }
@@ -20,7 +20,7 @@ export default function Contact() {
         getData()
     }, [])
 
-    const codePenIcon = "https://i.ibb.co/ZzLpcW5/cpenico2.png";
+    const codePenIcon = require("./cpenico2.png");
 
     return (
             <ContainerBox title="Contact" className="container" classDiv="contact_container">

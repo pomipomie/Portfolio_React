@@ -1,13 +1,12 @@
-
 export default function Header() {
     return (
         <header>
             <div className="banner" id="banner_container">
-                <img className="banner" id="banner_img" src="https://i.ibb.co/1Rc4M5H/reactcode.png" alt="banner"/>
+                <img className="banner" id="banner_img" src={require("./reactcode.webp")} alt="banner"/>
             </div>
             <div className="flex_container">
                 <div className="avatar" id="avatar_container">
-                    <img className="avatar" id="avatar_img" src="https://i.ibb.co/CsRR3c0/Avatarpic.jpg" alt="avatar"/>
+                    <img className="avatar" id="avatar_img" src={require("./1652234879678.webp")} alt="avatar"/>
                 </div>
                 <div id="title_container">
                     <h1 className="title_h1" id="first_name">María Xiomara</h1>
